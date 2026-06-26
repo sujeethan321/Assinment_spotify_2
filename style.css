@@ -105,3 +105,159 @@ body{
     max-width:600px;
 }
 
+/* Sections */
+body{
+    background:#121212;
+    color:white;
+    overflow-x:hidden;
+}
+
+.sidebar{
+    width:250px;
+    min-height:100vh;
+    background:#000;
+}
+
+.maincontent{
+    flex:1;
+    background:#181818;
+    min-height:100vh;
+}
+
+.hero-section{
+    padding:80px 40px;
+    background:linear-gradient(
+        135deg,
+        #1db954,
+        #121212
+    );
+}
+
+.nav-link{
+    color:#b3b3b3;
+}
+
+.nav-link:hover{
+    color:white;
+}
+
+.music-card{
+    background:#0b1609;
+    padding:15px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.music-card:hover{
+    background:#2a2a2a;
+    transform:translateY(-5px);
+}
+
+.player{
+    background:#000;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    padding:10px 20px;
+}
+
+.progress-slider{
+    width:250px;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+
+    .sidebar{
+        width:100%;
+        min-height:auto;
+        padding:15px;
+    }
+
+    .row.g-0{
+        flex-direction:column;
+    }
+
+    .hero-section{
+        padding:50px 20px;
+        text-align:center;
+    }
+
+    .hero-section h1{
+        font-size:2rem;
+    }
+
+    .player{
+        flex-wrap:wrap;
+        gap:10px;
+        padding:15px;
+    }
+
+    .progress-slider{
+        width:100%;
+    }
+
+    .top-bar{
+        padding:1px !important;
+    }
+}
+
+
+
+/* Player */
+
+.player{
+    height:80px;
+    background:#181818;
+    border-top:1px solid #282828;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+
+    color:white;
+}
+
+.progress-slider{
+    width:250px !important;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    body{
+        overflow:auto;
+    }
+
+    .sidebar{
+        position:relative;
+        width:100%;
+        height:auto;
+    }
+
+    .maincontent{
+        margin-left:0;
+    }
+
+    .player{
+        flex-wrap:wrap;
+        height:auto;
+        padding:10px;
+    }
+
+    .progress-slider{
+        width:150px !important;
+    }
+
+    .hero-section{
+        padding:30px 20px;
+    }
+
+    section{
+        padding:30px 20px;
+    }
+}
