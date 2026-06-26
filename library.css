@@ -1,0 +1,199 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+    background:#121212;
+    color:#fff;
+    font-family:Arial, sans-serif;
+}
+
+/* Sidebar */
+
+.sidebar{
+    background:#000;
+    height:100vh;
+    padding:30px;
+    position:fixed;
+    width:16.666%;
+}
+
+.spotify-logo{
+    color:#1DB954;
+    margin-bottom:40px;
+}
+
+.spotify-logo i{
+    margin-right:10px;
+}
+
+.sidebar a{
+    display:block;
+    color:#aaa;
+    text-decoration:none;
+    margin:20px 0;
+    font-size:17px;
+}
+
+.sidebar a:hover{
+    color:#fff;
+}
+
+/* Main */
+
+.main{
+    margin-left:16.666%;
+    background:#181818;
+    min-height:100vh;
+    padding:30px;
+}
+
+header button{
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:50%;
+    background:#000;
+    color:#fff;
+    margin-right:10px;
+}
+
+/* Songs */
+
+.songs-container{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.song-card{
+    width:180px;
+    background:#282828;
+    padding:15px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.song-card:hover{
+    background:#3e3e3e;
+    transform:scale(1.05);
+}
+
+.song-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.song-card h5{
+    margin-top:12px;
+}
+
+.song-card p{
+    color:#b3b3b3;
+    font-size:14px;
+}
+
+.song-card button{
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:50%;
+    background:#1DB954;
+    color:#fff;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+/* Library */
+
+#library{
+    margin-top:70px;
+}
+
+.library-search{
+    width:50%;
+    background:#242424;
+    color:#fff;
+    border:none;
+    padding:12px;
+    margin:20px 0;
+}
+
+.category button{
+    background:#333;
+    color:#fff;
+    border:none;
+    padding:10px 20px;
+    border-radius:20px;
+    margin:5px;
+}
+
+.library-card{
+    background:#282828;
+    padding:20px;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.heart{
+    width:80px;
+    height:80px;
+    background:linear-gradient(45deg,#450af5,#1db954);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:35px;
+    border-radius:10px;
+}
+
+.icon{
+    font-size:50px;
+    color:#1db954;
+}
+
+.playlist p{
+    background:#242424;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+.playlist i{
+    color:#1db954;
+    margin-right:15px;
+}
+
+/* Player */
+
+.player{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:80px;
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+}
+
+.play-btn{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:#1DB954;
+    color:#fff;
+    cursor:pointer;
+}
