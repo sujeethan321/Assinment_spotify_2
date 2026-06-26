@@ -49,41 +49,111 @@
         <main class="maincontent">
 
             <!-- Top Bar -->
-            <header class="top-bar d-flex justify-content-between align-items-center px-4 py-3">
+            <header class="top-bar d-flex justify-content-between align-items-center px-5 py-3">
 
-                <div class="d-flex gap-3">
-                    <button class="nav-btn rounded-circle">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </button>
-
-                    <button class="nav-btn rounded-circle">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </button>
-                </div>
-
-                <div class="d-flex align-items-center gap-4">
-                    <a href="#" class="upgrade">Upgrade</a>
+                    <a href="" class="upgrade">Upgrade</a>
                     <button class="profile rounded-circle">JD</button>
-                </div>
-
             </header>
 
             <!-- Hero Section -->
-            <section id="home" class="hero-section">
+           <!-- Trending Music -->
+<section class="container-fluid px-4 py-5">
 
-                <h1 class="display-3 fw-bold">
-                    Feel Every Beat 🎵
-                </h1>
+    <h2 class="text-white fw-bold mb-4">Trending Now</h2>
 
-                <p class="lead mt-3">
-                    Discover millions of songs, create playlists, and enjoy music without limits.
-                </p>
+    <div class="row g-4">
 
-                <button class="btn btn-success btn-lg mt-3">
-                    Start Listening
-                </button>
+        <div class="col-6 col-md-4 col-lg-2">
+            <div class="music-card">
+                <img src="./assets/images/download (6).jfif" class="img-fluid rounded" alt="">
+                <h6 class="mt-2 text-white">Top Hits 2026</h6>
+                <small>Most played songs</small>
+            </div>
+        </div>
 
-            </section>
+        <div class="col-6 col-md-4 col-lg-2">
+            <div class="music-card">
+                <img src="./assets/images/download (7).jfif" class="img-fluid rounded" alt="">
+                <h6 class="mt-2 text-white">Chill Vibes</h6>
+                <small>Relax & Enjoy</small>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+            <div class="music-card">
+                <img src="./assets/images/download (8).jfif" class="img-fluid rounded" alt="">
+                <h6 class="mt-2 text-white">Workout Mix</h6>
+                <small>Boost Energy</small>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+            <div class="music-card">
+                <img src="./assets/images/download (9).jfif" class="img-fluid rounded" alt="">
+                <h6 class="mt-2 text-white">Hip Hop</h6>
+                <small>Latest Rap Hits</small>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+            <div class="music-card">
+                <img src="./assets/images/download (10).jfif" class="img-fluid rounded" alt="">
+                <h6 class="mt-2 text-white">Party Mix</h6>
+                <small>Weekend Mood</small>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+            <div class="music-card">
+                <img src="./assets/images/download (11).jfif" class="img-fluid rounded" alt="">
+                <h6 class="mt-2 text-white">Tamil Hits</h6>
+                <small>Popular Songs</small>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Popular Artists -->
+<section class="container-fluid px-4 pb-5">
+
+    <h2 class="text-white fw-bold mb-4">Popular Artists</h2>
+
+    <div class="row g-4">
+
+        <div class="col-4 col-md-3 col-lg-2 text-center">
+            <img src="./assets/images/download.jfif" class="rounded-circle img-fluid">
+            <h6 class="text-white mt-2">Alan Walker</h6>
+        </div>
+
+        <div class="col-4 col-md-3 col-lg-2 text-center">
+            <img src="./assets/images/download (2).jfif" class="rounded-circle img-fluid">
+            <h6 class="text-white mt-2">Aniruth</h6>
+        </div>
+
+        <div class="col-4 col-md-3 col-lg-2 text-center">
+            <img src="./assets/images/download (3).jfif" class="rounded-circle img-fluid">
+            <h6 class="text-white mt-2">Hares jeyaraj</h6>
+        </div>
+
+        <div class="col-4 col-md-3 col-lg-2 text-center">
+            <img src="./assets/images/download (4).jfif" class="rounded-circle img-fluid">
+            <h6 class="text-white mt-2">AR Rahman</h6>
+        </div>
+
+        <div class="col-4 col-md-3 col-lg-2 text-center">
+            <img src="./assets/images/download (5).jfif" class="rounded-circle img-fluid">
+            <h6 class="text-white mt-2">Hip Hop Thamila</h6>
+        </div>
+
+        <div class="col-4 col-md-3 col-lg-2 text-center">
+            <img src="./assets/images/download (1).jfif" class="rounded-circle img-fluid">
+            <h6 class="text-white mt-2">marshmallow</h6>
+        </div>
+
+    </div>
+
+</section>
 
 
         </main>
@@ -92,7 +162,8 @@
 </div>
 
 <!-- Music Player -->
-<footer class="player fixed-bottom">
+<div class="fixed-bottom">
+    <div class="player">
 
     <i class="fa-solid fa-backward-step"></i>
 
@@ -121,8 +192,15 @@
     <audio id="clickSound">
         <source src="./assets/audio/Innisai.mp3" type="audio/mpeg">
     </audio>
+    </div>
+    <footer class="d-flex flex-row justify-content-between align-items-center px-4 py-3 bg-dark text-white">
+        <p><a href="https://newsroom.spotify.com/company-info/" class="text-decoration-none">About Us</a></p>
+        <p>&copy; 2023 Music Streaming App. All rights reserved.</p>
+    </footer>
 
-</footer>
+</div>
+
+
 
 <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 
