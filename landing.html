@@ -1,208 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify Clone</title>
-
+    <title>Document</title>
     <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Main container -->
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <!-- Sidebar -->
+            <aside class="sidebar col-2 p-4">
+                <h3 class="text-white fw-bold mb-5">
+                    <i class="fa-brands fa-spotify text-success"></i>
+                    <img src="./assets/images/Spotify_Primary_Logo_RGB_Green.png" alt="spotify logo"
+                        style="height: 30px; width:30px;">
+                    Spotify
+                </h3>
 
-<div class="container-fluid p-0">
-    <div class="row g-0">
+                <nav class="nav flex-column gap-3">
+                    <a href="" class="nav-link fw-semibold">
+                        <i class="fa-solid fa-house me-3"></i>Home
+                    </a>
+                    <a href="" class="nav-link fw-semibold">
+                        <i class="fa-solid fa-magnifying-glass me-3"></i>Search Bar
+                    </a>
+                    <a href="" class="nav-link fw-semibold">
+                        <i class="fa-solid fa-book me-3"></i>Your Library
+                    </a>
 
-        <!-- Sidebar -->
-        <aside class="sidebar p-4">
+                    <hr class="text-secondary">
 
-            <h3 class="text-white fw-bold mb-5">
-                <i class="fa-brands fa-spotify text-success"></i>
-                Spotify
-            </h3>
+                    <a href="#playlist" class="nav-link fw-semibold">
+                        <i class="fa-solid fa-square-plus me-3"></i>Create Playlist
+                    </a>
+                    <a href="#liked" class="nav-link fw-semibold">
+                        <i class="fa-solid fa-heart me-3"></i>Liked Songs
+                    </a>
+                </nav>
+            </aside>
 
-            <nav class="nav flex-column gap-3">
+            <!-- Main content -->
+            <main class="maincontent col-10 p-4">
+                <!-- Top navigation bar -->
+                <header class="top-bar d-flex justify-content-between align-items-center px-4 py-3">
+                    <div class="d-flex gap-3">
+                        <button class="nav-btn rounded-circle">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="nav-btn rounded-circle">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
 
-                <a href="#home" class="nav-link fw-semibold">
-                    <i class="fa-solid fa-house me-3"></i>Home
-                </a>
+                    <div class="d-flex align-items-center gap-4">
+                        <a href="" class="upgrade" style="text-decoration: none;">Upgrade</a>
+                        <button class="profile rounded-circle">JD</button>
+                    </div>
+                </header>
 
-                <a href="#search" class="nav-link fw-semibold">
-                    <i class="fa-solid fa-magnifying-glass me-3"></i>Search
-                </a>
+                
 
-                <a href="#library" class="nav-link fw-semibold">
-                    <i class="fa-solid fa-book me-3"></i>Your Library
-                </a>
-
-            </nav>
-
-        </aside>
-
-        <!-- Main Content -->
-        <main class="maincontent">
-
-            <!-- Top Bar -->
-            <header class="top-bar d-flex justify-content-between align-items-center px-5 py-3">
-
-                    <a href="" class="upgrade">Upgrade</a>
-                    <button class="profile rounded-circle">JD</button>
-            </header>
-
-            <!-- Hero Section -->
-           <!-- Trending Music -->
-<section class="container-fluid px-4 py-5">
-
-    <h2 class="text-white fw-bold mb-4">Trending Now</h2>
-
-    <div class="row g-4">
-
-        <div class="col-6 col-md-4 col-lg-2">
-            <div class="music-card">
-                <img src="./assets/images/download (6).jfif" class="img-fluid rounded" alt="">
-                <h6 class="mt-2 text-white">Top Hits 2026</h6>
-                <small>Most played songs</small>
-            </div>
+            </main>
         </div>
-
-        <div class="col-6 col-md-4 col-lg-2">
-            <div class="music-card">
-                <img src="./assets/images/download (7).jfif" class="img-fluid rounded" alt="">
-                <h6 class="mt-2 text-white">Chill Vibes</h6>
-                <small>Relax & Enjoy</small>
-            </div>
-        </div>
-
-        <div class="col-6 col-md-4 col-lg-2">
-            <div class="music-card">
-                <img src="./assets/images/download (8).jfif" class="img-fluid rounded" alt="">
-                <h6 class="mt-2 text-white">Workout Mix</h6>
-                <small>Boost Energy</small>
-            </div>
-        </div>
-
-        <div class="col-6 col-md-4 col-lg-2">
-            <div class="music-card">
-                <img src="./assets/images/download (9).jfif" class="img-fluid rounded" alt="">
-                <h6 class="mt-2 text-white">Hip Hop</h6>
-                <small>Latest Rap Hits</small>
-            </div>
-        </div>
-
-        <div class="col-6 col-md-4 col-lg-2">
-            <div class="music-card">
-                <img src="./assets/images/download (10).jfif" class="img-fluid rounded" alt="">
-                <h6 class="mt-2 text-white">Party Mix</h6>
-                <small>Weekend Mood</small>
-            </div>
-        </div>
-
-        <div class="col-6 col-md-4 col-lg-2">
-            <div class="music-card">
-                <img src="./assets/images/download (11).jfif" class="img-fluid rounded" alt="">
-                <h6 class="mt-2 text-white">Tamil Hits</h6>
-                <small>Popular Songs</small>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- Popular Artists -->
-<section class="container-fluid px-4 pb-5">
-
-    <h2 class="text-white fw-bold mb-4">Popular Artists</h2>
-
-    <div class="row g-4">
-
-        <div class="col-4 col-md-3 col-lg-2 text-center">
-            <img src="./assets/images/download.jfif" class="rounded-circle img-fluid">
-            <h6 class="text-white mt-2">Alan Walker</h6>
-        </div>
-
-        <div class="col-4 col-md-3 col-lg-2 text-center">
-            <img src="./assets/images/download (2).jfif" class="rounded-circle img-fluid">
-            <h6 class="text-white mt-2">Aniruth</h6>
-        </div>
-
-        <div class="col-4 col-md-3 col-lg-2 text-center">
-            <img src="./assets/images/download (3).jfif" class="rounded-circle img-fluid">
-            <h6 class="text-white mt-2">Hares jeyaraj</h6>
-        </div>
-
-        <div class="col-4 col-md-3 col-lg-2 text-center">
-            <img src="./assets/images/download (4).jfif" class="rounded-circle img-fluid">
-            <h6 class="text-white mt-2">AR Rahman</h6>
-        </div>
-
-        <div class="col-4 col-md-3 col-lg-2 text-center">
-            <img src="./assets/images/download (5).jfif" class="rounded-circle img-fluid">
-            <h6 class="text-white mt-2">Hip Hop Thamila</h6>
-        </div>
-
-        <div class="col-4 col-md-3 col-lg-2 text-center">
-            <img src="./assets/images/download (1).jfif" class="rounded-circle img-fluid">
-            <h6 class="text-white mt-2">marshmallow</h6>
-        </div>
-
     </div>
 
-</section>
+    <!-- Player bar -->
+    <div class="player fixed-bottom d-flex justify-content-center align-items-center gap-4 text-white">
+        <i class="fa-solid fa-backward-step"></i>
+        <button class="btn btn-primary" class="playbutton" onclick="document.getElementById('clickSound').play()">
+            <i class="fa-solid fa-circle-play fs-7"></i>Play
+        </button>
+        <i class="fa-solid fa-forward-step"></i>
 
+        <!-- Current Time -->
+        <small id="currentTime">0:00</small>
 
-        </main>
+        <!-- Progress Slider -->
+        <input type="range" id="progress" value="0" min="0" max="100" class="form-range w-25">
 
+        <!-- Duration -->
+        <small id="duration">5:00</small>
+
+        <!-- Audio Element -->
+        <audio id="clickSound">
+            <source src="./assets/audio/Innisai.mp3" type="audio/mpeg">
+        </audio>
     </div>
-</div>
 
-<!-- Music Player -->
-<div class="fixed-bottom">
-    <div class="player">
-
-    <i class="fa-solid fa-backward-step"></i>
-
-    <button type="button"
-        class="btn btn-success"
-        onclick="document.getElementById('clickSound').play()">
-
-        <i class="fa-solid fa-circle-play fs-3"></i>
-
-    </button>
-
-    <i class="fa-solid fa-forward-step"></i>
-
-    <small id="currentTime">0:00</small>
-
-    <input
-        type="range"
-        id="progress"
-        value="0"
-        min="0"
-        max="100"
-        class="form-range progress-slider">
-
-    <small id="duration">5:00</small>
-
-    <audio id="clickSound">
-        <source src="./assets/audio/Innisai.mp3" type="audio/mpeg">
-    </audio>
-    </div>
-    <footer class="d-flex flex-row justify-content-between align-items-center px-4 py-3 bg-dark text-white">
-        <p><a href="https://newsroom.spotify.com/company-info/" class="text-decoration-none">About Us</a></p>
-        <p>&copy; 2023 Music Streaming App. All rights reserved.</p>
+    <!-- Footer -->
+    <footer>
     </footer>
 
-</div>
-
-
-
-<script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="./bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
