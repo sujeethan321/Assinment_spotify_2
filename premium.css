@@ -1,15 +1,22 @@
 body{
     background:#121212;
-    color:white;
+    color:rgba(255,255,255,0.88);
     font-family:Arial, sans-serif;
     overscroll-behavior: none;
 }
 
 .premium-banner{
-    background:linear-gradient(to right,#8b0f5c,#1e3a8a);
+  background: linear-gradient(135deg,
+#C13584,
+#8B5CF6,
+#4F7DF7);
     padding:60px 20px;
 }
 
+.premium-banner h1{
+   font-family: 'Playfair Display', serif;
+    font-weight: 800;
+}
 .premium-banner h2{
     font-size:2rem;
 }
@@ -18,63 +25,11 @@ body{
     border-radius:30px;
     padding:15px 35px;
     font-weight:600;
+    color:#1c0541
 }
-
-.plans-section{
-    padding:80px 0;
-}
-
-.plans-section h1{
-    font-size:2rem;
-}
-
-.plan-text{
-    max-width:800px;
-    margin:auto;
-    font-size:1.3rem;
-}
-
-.payment-icons{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    flex-wrap:wrap;
-}
-
-.payment-icons img{
-    width:70px;
-    height:45px;
-    background:white;
-    padding:5px;
-    border-radius:5px;
-}
-
-.premium-includes{
-    padding:100px 0;
-}
-
-.feature-list{
-    list-style:none;
-    padding:0;
-    
-}
-
-.feature-list li{
-    font-size:1.4rem;
-    margin-bottom:15px;
-}
-
-.feature-list i{
-    margin-right:10px;
-}
-
-
-
-
-
 .flip-card {
   background-color: transparent;
-  height: 320px; /* Uniform height given to the structure */
+  height: 320px; 
   perspective: 1000px; 
 }
 
@@ -100,12 +55,54 @@ body{
   border-radius: 12px;
 }
 
+.flip-card-back{
+    background-color: #1c0541;
+}
+
 .flip-card-back {
   transform: rotateY(180deg);
 }
+ 
 
-.product-item {
-  transition: transform 0.4s ease, opacity 0.4s ease;
-  transform: scale(1);
-  opacity: 1;
+
+.payment-icon {
+  width: 55px;
+  height: auto;
+  transition: 0.3s ease;
+}
+
+.payment-icon:hover {
+  transform: scale(1.1);
+}
+
+.feature-list li {
+  color: #b3b3b3;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 22px;
+  line-height: 1.5;
+}
+
+.feature-list li::before {
+  content: "✔";
+  color: #1db954;
+  position: absolute;
+  left: 0;
+}
+
+.card-plans {
+  transition: 0.3s ease;
+}
+
+.card-plans:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+  border: 1px solid #1db954;
+}
+
+.card-plans h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.3;
 }
