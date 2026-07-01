@@ -65,10 +65,6 @@ body{
     top: 0;
     z-index: 1000;
 
-    display: flex;
-    justify-content: space-between; /* Pushes left and right apart */
-    align-items: center;
-
     padding: 15px 30px;
 
     background: rgba(18,18,18,.85);
@@ -97,6 +93,9 @@ body{
     color:#fff;
     cursor:pointer;
     transition:.3s;
+}
+.hero-section{
+    text-align: center;
 }
 
 .nav-btn:hover{
