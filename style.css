@@ -72,17 +72,6 @@ body{
     border-bottom: 1px solid rgba(255,255,255,.08);
 }
 
-.left-controls{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.right-controls{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
 
 .nav-btn{
     width:40px;

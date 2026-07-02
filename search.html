@@ -6,6 +6,9 @@
     <title>Spotify search</title>
     <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./search.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
 </head>
 <body>
@@ -16,56 +19,41 @@
 
     <div class="row g-0">
             <!-- Sidebar is here -->
-    <aside class="sidebar col-2 p-4">
+      <!-- Sidebar -->
+        <aside class="sidebar p-4">
 
             <h3 class="text-white fw-bold mb-5">
-                <i class="fa-brands fa-spotify text-success"></i><img src="./assets/images/Spotify_Primary_Logo_RGB_Green.png" alt="spotify logo" style="height: 30px; width:30px;"> Spotify</h3>
-        
-        <nav class="nav flex-column gap-3"></nav>    
+                <i class="fa-brands fa-spotify text-success"></i>
+                Spotify
+            </h3>
+
+            <nav class="nav flex-column gap-3">
+
                 <a href="landing.html" class="nav-link fw-semibold">
-                    <i class="fa-solid fa-house me-3"></i>Home</a><br>
+                    <i class="fa-solid fa-house me-3"></i>Home
+                </a>
 
-                <a href="" class="nav-link fw-semibold">
-                    <i class="fa-solid fa-magnifying-glass me-3"></i>Search Bar</a> <br>
-                
+                <a href="search.html" class="nav-link fw-semibold">
+                    <i class="fa-solid fa-magnifying-glass me-3"></i>Search
+                </a>
+
                 <a href="library.html" class="nav-link fw-semibold">
-                    <i class="fa-solid fa-book me-3"></i>Your Library</a><br>
-
-    <hr class="text-secondary">
-        
-                <a href="" class="nav-link fw-semibold">
-                    <i class="fa-solid fa-square-plus me-3"></i>Create Playlist</a><br>
-                 
-                <a href="" class="nav-link fw-semibold">
-                    <i class="fa-solid fa-heart me-3"></i>Liked Songs </a><br>
+                    <i class="fa-solid fa-book me-3"></i>Your Library
+                </a>
 
             </nav>
 
-    </aside>    
+        </aside>    
       
     
 
  <main class="maincontent col-10 p-4">
      <!-- Top Bar -->
-<header class="top-bar d-flex justify-content-between align-items-center px-4 py-3">
-
-    <div class="d-flex gap-3">
-        <button class="nav-btn rounded-circle">
-            <i class="fa-solid fa-chevron-left"><</i>
-        </button>
-
-        <button class="nav-btn rounded-circle">
-            <i class="fa-solid fa-chevron-right">></i>
-        </button>
-    </div>
-
-    <div class="d-flex align-items-center gap-4 ">
-        <a href="" class="upgrade" style="text-decoration: none;">Upgrade</a>
-
-        <button class="profile rounded-circle">JD</button>
-    </div>
-
-   </header>
+ <!-- Top Bar -->
+            <header class="top-bar d-flex align-items-center justify-content-between px-4 py-3">
+                  <a href="upgrade.html" class="upgrade">Upgrade</a>
+                   <button class="profile rounded-circle">JD</button>
+            </header>
     <div class="browse-wrapper">
    <h2 class="browse-title mb-4">Browse all</h2>
     <div class="row g-3">
@@ -239,38 +227,38 @@
 </div>  
 
 
-<div class="player fixed-bottom d-flex justify-content-center align-items-center gap-4 text-white">
+<!-- Music Player -->
+<footer class="player fixed-bottom">
+
     <i class="fa-solid fa-backward-step"></i>
-    <button class="btn btn-primary" classs="playbutton" onclick="document.getElementById('clickSound').play()"><i class="fa-solid fa-circle-play fs-7"></i>play</button>
+
+    <button type="button"
+        class="btn btn-success"
+        onclick="document.getElementById('clickSound').play()">
+
+        <i class="fa-solid fa-circle-play fs-3"></i>
+
+    </button>
+
     <i class="fa-solid fa-forward-step"></i>
 
-
-     <!-- Current Time -->
     <small id="currentTime">0:00</small>
 
-    <!-- Progress Slider -->
-    <input type="range"
-           id="progress"
-           value="0"
-           min="0"
-           max="100"
-           class="form-range w-25">
+    <input
+        type="range"
+        id="progress"
+        value="0"
+        min="0"
+        max="100"
+        class="form-range progress-slider">
 
-    <!-- Duration -->
     <small id="duration">5:00</small>
 
-    <!-- Audio Element -->
-<audio id="clickSound">
-  <source src="./assets/audio/Innisai.mp3" type="audio/mpeg">
-</audio>
+    <audio id="clickSound">
+        <source src="./assets/audio/Innisai.mp3" type="audio/mpeg">
+    </audio>
 
-<!-- Bootstrap Styled Button -->
-</div>
-
-
-
- <!-- footer stars here -->
-<footer>
+</footer>
 
 </footer>
 <script src="./bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
