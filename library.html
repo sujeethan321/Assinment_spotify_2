@@ -1,234 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ta">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Web App</title>
+    <link rel="stylesheet" href="library.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <title>Spotify Clone</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="library.css">
 </head>
-
 <body>
 
-<div class="container-fluid">
-
-    <div class="row">
-
-        <!-- Sidebar -->
-        <aside class="col-md-2 sidebar">
-
-            <h2 class="spotify-logo">
-                <i class="fa-brands fa-spotify"></i> Spotify
-            </h2>
-
-            <a href="#"><i class="fa-solid fa-house"></i> Home</a>
-
-            <a href="#library">
-                <i class="fa-solid fa-book"></i> Library
-            </a>
-
-            <a href="#">
-                <i class="fa-solid fa-heart"></i> Liked Songs
-            </a>
-
-            <a href="#">
-                <i class="fa-solid fa-plus"></i> Create Playlist
-            </a>
-
-        </aside>
-
-        <!-- Main Content -->
-        <main class="col-md-10 offset-md-2 main">
-
-            <header class="mb-4">
-
-                <button>
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
-
-                <button>
-                    <i class="fa-solid fa-chevron-right"></i>
-                </button>
-
-            </header>
-
-            <!-- Popular Songs -->
-
+    <div class="container">
+        <div class="header-row">
+            <div class="nav-buttons">
+                <button class="nav-btn">&lt;</button>
+                <button class="nav-btn">&gt;</button>
+            </div>
             <h2>Popular Songs</h2>
-
-            <div class="songs-container">
-
-                <div class="song-card">
-
-                    <img src="assets/images/song1.jpg" alt="">
-
-                    <h5>Innisai</h5>
-
-                    <p>P.Unnikrishnan</p>
-
-                    <button>▶</button>
-
-                </div>
-
-                <div class="song-card">
-
-                    <img src="assets/images/song2.jpg" alt="">
-
-                    <h5>Vaseegara</h5>
-
-                    <p>Harris Jayaraj</p>
-
-                    <button>▶</button>
-
-                </div>
-
-                <div class="song-card">
-
-                    <img src="assets/images/song3.jpg" alt="">
-
-                    <h5>Munbe Vaa</h5>
-
-                    <p>A.R Rahman</p>
-
-                    <button>▶</button>
-
-                </div>
-
-                <div class="song-card">
-
-                    <img src="assets/images/song4.jpg" alt="">
-
-                    <h5>Minnale</h5>
-
-                    <p>Haricharan</p>
-
-                    <button>▶</button>
-
-                </div>
-
+        </div>
+        
+        <div class="popular-grid">
+            <div class="song-card">
+                <div class="image-placeholder"></div>
+                <div class="song-title">Innisai</div>
+                <div class="song-artist">P.Unnikrishnan</div>
+                <button class="play-btn">▶</button>
             </div>
 
-            <!-- Library -->
+            <div class="song-card">
+                <div class="image-placeholder"></div>
+                <div class="song-title">Vaseegara</div>
+                <div class="song-artist">Harris Jayaraj</div>
+                <button class="play-btn">▶</button>
+            </div>
 
-            <section id="library">
+            <div class="song-card">
+                <div class="image-placeholder"></div>
+                <div class="song-title">Munbe Vaa</div>
+                <div class="song-artist">A.R Rahman</div>
+                <button class="play-btn">▶</button>
+            </div>
 
-                <h2>Your Library</h2>
+            <div class="song-card">
+                <div class="image-placeholder"></div>
+                <div class="song-title">Minnale</div>
+                <div class="song-artist">Haricharan</div>
+                <button class="play-btn">▶</button>
+            </div>
 
-                <input
-                class="library-search"
-                type="text"
-                placeholder="Search Your Library">
-
-                <div class="category">
-
-                    <button>Playlists</button>
-
-                    <button>Songs</button>
-
-                    <button>Albums</button>
-
-                    <button>Artists</button>
-
-                    <button>Podcasts</button>
-
-                </div>
-
-                <div class="library-card">
-
-                    <div class="heart">
-                        ❤
-                    </div>
-
-                    <div>
-
-                        <h4>Liked Songs</h4>
-
-                        <p>120 Songs</p>
-
-                    </div>
-
-                </div>
-
-                <br>
-
-                <div class="library-card">
-
-                    <i class="fa-solid fa-compact-disc icon"></i>
-
-                    <div>
-
-                        <h4>Albums</h4>
-
-                        <p>Saved Albums</p>
-
-                    </div>
-
-                </div>
-
-                <br>
-
-                <div class="library-card">
-
-                    <i class="fa-solid fa-microphone icon"></i>
-
-                    <div>
-
-                        <h4>Artists</h4>
-
-                        <p>Following Artists</p>
-
-                    </div>
-
-                </div>
-
-                <br>
-
-                <h2>Your Playlist</h2>
-
-                <div class="playlist">
-
-                    <p><i class="fa-solid fa-music"></i>Tamil Hits</p>
-
-                    <p><i class="fa-solid fa-music"></i>Workout Songs</p>
-
-                    <p><i class="fa-solid fa-music"></i>Chill Vibes</p>
-
-                    <p><i class="fa-solid fa-podcast"></i>Podcasts</p>
-
-                </div>
-
-            </section>
-
-        </main>
-
+            <div class="song-card">
+                <div class="image-placeholder"></div>
+                <div class="song-title">Munpaniya</div>
+                <div class="song-artist">Yuvan Shankar Raja</div>
+                <button class="play-btn">▶</button>
+            </div>
+        </div>
     </div>
 
-</div>
+    <div class="container">
+        <h2>Your Library</h2>
+        
+        <div class="search-box">
+            <input type="text" placeholder="Search your library..." class="search-input">
+        </div>
 
-<footer class="player">
+        <div class="chips-container">
+            <button class="chip active">Playlists</button>
+            <button class="chip">Songs</button>
+            <button class="chip">Albums</button>
+            <button class="chip">Artists</button>
+            <button class="chip">Podcasts</button>
+        </div>
 
-    <i class="fa-solid fa-backward-step"></i>
+        <div class="library-grid">
+            <div class="lib-card">
+                <div class="icon-wrapper liked-songs">⋆</div>
+                <h3>Liked Songs</h3>
+                <p>120 Songs</p>
+            </div>
 
-    <button class="play-btn">
-        <i class="fa-solid fa-play"></i>
-    </button>
+            <div class="lib-card">
+                <div class="icon-wrapper albums">⋆</div>
+                <h3>Albums</h3>
+                <p>Saved Albums</p>
+            </div>
 
-    <i class="fa-solid fa-forward-step"></i>
+            <div class="lib-card">
+                <div class="icon-wrapper artists">⋆</div>
+                <h3>Artists</h3>
+                <p>Following Artists</p>
+            </div>
 
-    <input type="range" style="width:250px;">
+            <div class="lib-card">
+                <div class="icon-wrapper playlists">⋆</div>
+                <h3>Playlists</h3>
+                <p>15 Playlists</p>
+            </div>
+        </div>
+    </div>
 
-</footer>
+    <div class="container">
+        <h2>Your Playlist</h2>
+        
+        <div class="playlist-grid">
+            <div class="playlist-card">
+                <div class="playlist-icon-wrapper">♫</div>
+                <h3>Tamil Hits</h3>
+                <p>Curated Playlist</p>
+            </div>
 
-<script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+            <div class="playlist-card">
+                <div class="playlist-icon-wrapper">♫</div>
+                <h3>Workout Songs</h3>
+                <p>Curated Playlist</p>
+            </div>
+
+            <div class="playlist-card">
+                <div class="playlist-icon-wrapper">♫</div>
+                <h3>Chill Vibes</h3>
+                <p>Curated Playlist</p>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
